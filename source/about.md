@@ -2,6 +2,7 @@
 title: 关于博客
 layout: about
 permalink: about.html
+date: 2021/07/22
 ---
 
 ## 博客搭建
