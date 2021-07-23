@@ -6,3 +6,5 @@
 ##  main分支是博客生成的展示。
 
 在 `aizc.github.io`. 上即可访问。 
+
+npm i hexo-theme-nexmoe 更新主题。
