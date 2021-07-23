@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 张大超的博客
+title: 张大超
 subtitle: ''
 description: ''
 keywords:
 author: AIZc
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
@@ -98,7 +98,7 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: nexmoe
-
+theme_config: _config.nexmoe.yml
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
