@@ -103,5 +103,5 @@ theme_config: _config.nexmoe.yml
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/AIZc/AIZc.github.io
-  branch: main
+  repo: git@github.com:AIZc/AIZc.github.io.git
+  branch: master
