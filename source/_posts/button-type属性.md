@@ -1,6 +1,12 @@
 ---
 title: antd Botton组件 httpType属性。
 date: 2021/07/26
+cover: https://img2.huashi6.com/images/resource/2015/11/07/53h430426p0.jpg
+categories:
+- 开发
+tags:
+- html
+- antd
 ---
 
 ## button type属性

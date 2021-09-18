@@ -45,11 +45,11 @@ relative_link: false
 future: true
 highlight:
   enable: true
+  hljs: true
+  auto_detect: true
   line_number: true
-  auto_detect: false
   tab_replace: ''
   wrap: true
-  hljs: false
 prismjs:
   enable: false
   preprocess: true
@@ -104,4 +104,4 @@ theme_config: _config.nexmoe.yml
 deploy:
   type: git
   repo: git@github.com:AIZc/AIZc.github.io.git
-  branch: master
+  branch: main

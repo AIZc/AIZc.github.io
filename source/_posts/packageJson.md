@@ -1,6 +1,11 @@
 ---
 title: package.json详解。
 date: 2021/09/15
+cover: https://img2.huashi6.com/images/resource/2015/11/07/53h430426p0.jpg
+categories:
+- 开发
+tags:
+- package.json
 ---
 
 ## 各属性介绍：
@@ -101,7 +106,6 @@ date: 2021/09/15
 * `engines` 设置了此软件包/应用程序在哪个版本的 Node.js 上运行。
 * `browserslist` 用于告知要支持哪些浏览器（及其版本）。
 ### 总结：
-
 使用npm安装包的时候一定要判断好，该安装在那个节点下，实在判断不出来，那就安装在`dependencies`生产环境下，不过不建议这么做。
 
 end～

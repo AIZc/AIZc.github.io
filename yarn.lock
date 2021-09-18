@@ -26,9 +26,9 @@
   "version" "1.0.1"
 
 "ansi-regex@^5.0.0":
-  "integrity" "sha1-OIU59VF5vzkznIGvMKZU1p+Hy3U="
-  "resolved" "https://registry.npm.taobao.org/ansi-regex/download/ansi-regex-5.0.0.tgz?cache=0&sync_timestamp=1618553044693&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fansi-regex%2Fdownload%2Fansi-regex-5.0.0.tgz"
-  "version" "5.0.0"
+  "integrity" "sha1-CCyyyJyf6GWaMRpTvWpNxTAdswQ="
+  "resolved" "https://registry.nlark.com/ansi-regex/download/ansi-regex-5.0.1.tgz?cache=0&sync_timestamp=1631634988487&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fansi-regex%2Fdownload%2Fansi-regex-5.0.1.tgz"
+  "version" "5.0.1"
 
 "ansi-styles@^4.1.0":
   "integrity" "sha1-7dgDYornHATIWuegkG7a00tkiTc="
@@ -562,10 +562,10 @@
     "open" "^7.0.0"
     "serve-static" "^1.14.1"
 
-"hexo-theme-nexmoe@^3.0.2":
-  "integrity" "sha1-EX6JxWfb9EDk8McJq4dTAB3q6Fw="
-  "resolved" "https://registry.nlark.com/hexo-theme-nexmoe/download/hexo-theme-nexmoe-3.0.2.tgz"
-  "version" "3.0.2"
+"hexo-theme-nexmoe@^3.0.6":
+  "integrity" "sha1-D2N7gSODVeUGVK+C4J48/o4vmmo="
+  "resolved" "https://registry.nlark.com/hexo-theme-nexmoe/download/hexo-theme-nexmoe-3.0.6.tgz"
+  "version" "3.0.6"
   dependencies:
     "hexo-wordcount" "^6.0.1"
 
@@ -588,7 +588,7 @@
   "resolved" "https://registry.npm.taobao.org/hexo-wordcount/download/hexo-wordcount-6.0.1.tgz"
   "version" "6.0.1"
 
-"hexo@^5.4.0":
+"hexo@^5.0.0":
   "integrity" "sha1-d9V/ocKfOrBZZP5OvZxE4j31Gzc="
   "resolved" "https://registry.npm.taobao.org/hexo/download/hexo-5.4.0.tgz?cache=0&sync_timestamp=1613894935063&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fhexo%2Fdownload%2Fhexo-5.4.0.tgz"
   "version" "5.4.0"
@@ -663,9 +663,9 @@
     "binary-extensions" "^2.0.0"
 
 "is-core-module@^2.2.0":
-  "integrity" "sha1-91SENhfHC/0pt72HMnQAzaXBhJE="
-  "resolved" "https://registry.nlark.com/is-core-module/download/is-core-module-2.5.0.tgz?cache=0&sync_timestamp=1626158731691&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fis-core-module%2Fdownload%2Fis-core-module-2.5.0.tgz"
-  "version" "2.5.0"
+  "integrity" "sha1-11U7JSb+Wbkro+QMjfdX7Ipwnhk="
+  "resolved" "https://registry.nlark.com/is-core-module/download/is-core-module-2.6.0.tgz"
+  "version" "2.6.0"
   dependencies:
     "has" "^1.0.3"
 
@@ -1100,7 +1100,7 @@
 
 "strip-ansi@^6.0.0":
   "integrity" "sha1-CxVx3XZpzNTz4G4U7x7tJiJa5TI="
-  "resolved" "https://registry.nlark.com/strip-ansi/download/strip-ansi-6.0.0.tgz"
+  "resolved" "https://registry.nlark.com/strip-ansi/download/strip-ansi-6.0.0.tgz?cache=0&sync_timestamp=1631350330859&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fstrip-ansi%2Fdownload%2Fstrip-ansi-6.0.0.tgz"
   "version" "6.0.0"
   dependencies:
     "ansi-regex" "^5.0.0"
@@ -1157,7 +1157,7 @@
 
 "tildify@^2.0.0":
   "integrity" "sha1-8gXzZ01nfOaYtwZ6melJzgO0dUo="
-  "resolved" "https://registry.npm.taobao.org/tildify/download/tildify-2.0.0.tgz"
+  "resolved" "https://registry.nlark.com/tildify/download/tildify-2.0.0.tgz?cache=0&sync_timestamp=1628772896453&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftildify%2Fdownload%2Ftildify-2.0.0.tgz"
   "version" "2.0.0"
 
 "timsort@^0.3.0":

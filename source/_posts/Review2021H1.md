@@ -1,6 +1,9 @@
 ---
 title: 博客初步搭建完成，Review2021H1。
 date: 2021/07/22
+cover: https://files.catbox.moe/8ajeyx.jpg
+categories:
+- 生活
 ---
 
 ## 2021.07.22

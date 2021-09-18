@@ -1,6 +1,11 @@
 ---
 title: 老婆的随心笔记。
 date: 2021/07/23
+cover: https://files.catbox.moe/8ajeyx.jpg
+categories:
+- 生活
+tags:
+- wife
 ---
 
 ## 2021.07.23

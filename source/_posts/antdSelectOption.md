@@ -1,6 +1,12 @@
 ---
 title: antd Select组件的Option组件的设置key不生效问题。
 date: 2021/08/02
+cover: https://img2.huashi6.com/images/resource/2015/11/07/53h430426p0.jpg
+categories: 
+- 开发
+tags:
+- react
+- antd
 ---
 
 ## 使用map遍历生成Option时，给每一个option组件设置key为什么会报不唯一错误？

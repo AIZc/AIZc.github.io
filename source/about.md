@@ -2,6 +2,7 @@
 title: 关于博客
 layout: about
 permalink: about.html
+cover: https://img2.huashi6.com/images/resource/2015/11/07/53h430426p0.jpg
 date: 2021/07/22
 ---
 
