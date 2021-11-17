@@ -4,7 +4,7 @@
 
 <head>
     
-    <title>antd Botton组件 httpType属性。 - 张大超</title>
+    <title>es6 阅读记录 变量解构赋值。 - 张大超</title>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -13,23 +13,23 @@
     
 
     <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/39026040?v=4" type="image/x-icon" />
-    <meta name="description" content="button type属性 submit 该按钮是提交按钮（除了 Internet Explorer，该值是其他浏览器的默认值）  button 该按钮是可点击的按钮（Internet Explorer 的默认值）  reset 该按钮是重置按钮（清除表单数据）   总结：其他浏览器（除IE浏览器）中，如果button没有设置type属性，默认值为type&#x3D;”submit”，会进行跳转页面和提交数">
+    <meta name="description" content="默认值生效的条件是，对象的属性值严格等于undefined。let &amp;#123;x &#x3D; 3&amp;#125; &#x3D; &amp;#123;x: undefined&amp;#125;;x &#x2F;&#x2F; 3let &amp;#123;x &#x3D; 3&amp;#125; &#x3D; &amp;#123;x: null&amp;#125;;x &#x2F;&#x2F; null 上面代码中，属性x等于null，因为null与undefined不严格相等，所以是个有效的赋值，导致默认值3不会生效。 用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="antd Botton组件 httpType属性。">
-<meta property="og:url" content="https://aizc.github.io/2021/07/26/button-type%E5%B1%9E%E6%80%A7/index.html">
+<meta property="og:title" content="es6 阅读记录 变量解构赋值。">
+<meta property="og:url" content="https://aizc.github.io/2021/11/27/es6-%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="张大超">
-<meta property="og:description" content="button type属性 submit 该按钮是提交按钮（除了 Internet Explorer，该值是其他浏览器的默认值）  button 该按钮是可点击的按钮（Internet Explorer 的默认值）  reset 该按钮是重置按钮（清除表单数据）   总结：其他浏览器（除IE浏览器）中，如果button没有设置type属性，默认值为type&#x3D;”submit”，会进行跳转页面和提交数">
+<meta property="og:description" content="默认值生效的条件是，对象的属性值严格等于undefined。let &amp;#123;x &#x3D; 3&amp;#125; &#x3D; &amp;#123;x: undefined&amp;#125;;x &#x2F;&#x2F; 3let &amp;#123;x &#x3D; 3&amp;#125; &#x3D; &amp;#123;x: null&amp;#125;;x &#x2F;&#x2F; null 上面代码中，属性x等于null，因为null与undefined不严格相等，所以是个有效的赋值，导致默认值3不会生效。 用">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-07-25T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-09-15T09:09:04.686Z">
+<meta property="article:published_time" content="2021-11-26T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-11-17T08:46:17.550Z">
 <meta property="article:author" content="AIZc">
-<meta property="article:tag" content="antd">
-<meta property="article:tag" content="html">
+<meta property="article:tag" content="javascript">
+<meta property="article:tag" content="es6">
 <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1637138781091">
+    <link rel="stylesheet" href="/css/style.css?v=1637138781064">
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1637138781091">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1637138781064">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -175,29 +175,27 @@
   <article>
       
           <div class="nexmoe-post-cover" style="padding-bottom: NaN%;"> 
-              <img data-src="https://img2.huashi6.com/images/resource/2015/11/07/53h430426p0.jpg" data-sizes="auto" alt="antd Botton组件 httpType属性。" class="lazyload">
-              <h1>antd Botton组件 httpType属性。</h1>
+              <img data-src="https://img2.huashi6.com/images/resource/2015/11/07/53h430426p0.jpg" data-sizes="auto" alt="es6 阅读记录 变量解构赋值。" class="lazyload">
+              <h1>es6 阅读记录 变量解构赋值。</h1>
           </div>
       
       
       <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2021年07月26日</a>
-    <a><i class="nexmoefont icon-areachart"></i>141 字</a>
+    <a><i class="nexmoefont icon-calendar-fill"></i>2021年11月27日</a>
+    <a><i class="nexmoefont icon-areachart"></i>236 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
 </div>
 
       
 
-      <h2 id="button-type属性"><a href="#button-type属性" class="headerlink" title="button type属性"></a>button type属性</h2><ul>
-<li><p>submit 该按钮是提交按钮（除了 Internet Explorer，该值是其他浏览器的默认值）</p>
-</li>
-<li><p>button 该按钮是可点击的按钮（Internet Explorer 的默认值）</p>
-</li>
-<li><p>reset 该按钮是重置按钮（清除表单数据）</p>
-</li>
-</ul>
-<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><p>其他浏览器（除IE浏览器）中，如果button没有设置type属性，默认值为type=”submit”，会进行跳转页面和提交数据的操作，假如想进行使用ajax表单提交而且不进行跳转，必须设置成type=”button”</p>
-<p>IE浏览器button默认type属性是type=”button”</p>
+      <h2 id="默认值生效的条件是，对象的属性值严格等于undefined。"><a href="#默认值生效的条件是，对象的属性值严格等于undefined。" class="headerlink" title="默认值生效的条件是，对象的属性值严格等于undefined。"></a>默认值生效的条件是，对象的属性值严格等于undefined。</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> &#123;x = <span class="hljs-number">3</span>&#125; = &#123;<span class="hljs-attr">x</span>: <span class="hljs-literal">undefined</span>&#125;;<br>x <span class="hljs-comment">// 3</span><br><br><span class="hljs-keyword">let</span> &#123;x = <span class="hljs-number">3</span>&#125; = &#123;<span class="hljs-attr">x</span>: <span class="hljs-literal">null</span>&#125;;<br>x <span class="hljs-comment">// null</span><br></code></pre></td></tr></table></figure>
+<p>上面代码中，属性<code>x</code>等于<code>null</code>，因为<code>null</code>与<code>undefined</code>不严格相等，所以是个有效的赋值，导致默认值<code>3</code>不会生效。</p>
+<h2 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h2><h3 id="不使用第三个变量交换两个变量的值"><a href="#不使用第三个变量交换两个变量的值" class="headerlink" title="不使用第三个变量交换两个变量的值"></a>不使用第三个变量交换两个变量的值</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> x = <span class="hljs-number">1</span>;<br><span class="hljs-keyword">let</span> y = <span class="hljs-number">2</span>;<br><br>[x, y] = [y, x];<br></code></pre></td></tr></table></figure>
+
+<h2 id="Object-getOwnPropertyDescriptors"><a href="#Object-getOwnPropertyDescriptors" class="headerlink" title="Object.getOwnPropertyDescriptors()"></a>Object.getOwnPropertyDescriptors()</h2><h3 id="为了解决Object-assign-无法拷贝set或者get，Object-getOwnPropertyDescriptors-配合-Object-defineProperties-就可以实现set和get的拷贝。"><a href="#为了解决Object-assign-无法拷贝set或者get，Object-getOwnPropertyDescriptors-配合-Object-defineProperties-就可以实现set和get的拷贝。" class="headerlink" title="为了解决Object.assign() 无法拷贝set或者get，Object.getOwnPropertyDescriptors() 配合 Object.defineProperties() 就可以实现set和get的拷贝。"></a>为了解决Object.assign() 无法拷贝set或者get，Object.getOwnPropertyDescriptors() 配合 Object.defineProperties() 就可以实现set和get的拷贝。</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> target = &#123;&#125;;<br><span class="hljs-keyword">const</span> source = &#123;<br>  <span class="hljs-keyword">set</span> <span class="hljs-title">foo</span>(<span class="hljs-params">value</span>) &#123;<br>    <span class="hljs-built_in">console</span>.log(value);<br>  &#125;<br>&#125;;<br><span class="hljs-built_in">Object</span>.defineProperties(<br>  target,<br>  <span class="hljs-built_in">Object</span>.getOwnPropertyDescriptors(source)<br>);<br><span class="hljs-comment">// &#123; get: undefined,</span><br><span class="hljs-comment">//   set: [Function: set foo],</span><br><span class="hljs-comment">//   enumerable: true,</span><br><span class="hljs-comment">//   configurable: true &#125;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="Object-assign-无法拷贝原型，Object-create-和-getOwnPropertyDescriptors-配合可以实现原型拷贝。"><a href="#Object-assign-无法拷贝原型，Object-create-和-getOwnPropertyDescriptors-配合可以实现原型拷贝。" class="headerlink" title="Object.assign()无法拷贝原型，Object.create() 和 getOwnPropertyDescriptors() 配合可以实现原型拷贝。"></a>Object.assign()无法拷贝原型，Object.create() 和 getOwnPropertyDescriptors() 配合可以实现原型拷贝。</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> obj = &#123;<br>    <span class="hljs-attr">a</span>:<span class="hljs-number">1</span>,<br>    <span class="hljs-attr">b</span>:<span class="hljs-number">2</span><br>&#125;<br><span class="hljs-keyword">const</span> obj1 = &#123;<br>  <span class="hljs-attr">x</span>:<span class="hljs-number">0</span><br>&#125;<br>obj.__proto__ = obj1 <span class="hljs-comment">// 或者Object.setPrototypeOf(obj,obj1)</span><br><span class="hljs-keyword">const</span> clone = <span class="hljs-built_in">Object</span>.create(<span class="hljs-built_in">Object</span>.getPrototypeOf(obj), <span class="hljs-built_in">Object</span>.getOwnPropertyDescriptors(obj));<br><span class="hljs-comment">// a: 1</span><br><span class="hljs-comment">// b: 2</span><br><span class="hljs-comment">//         [[Prototype]]: Object</span><br><span class="hljs-comment">//          x: 0</span><br></code></pre></td></tr></table></figure>
+
 <p>end～</p>
 
   </article>
@@ -206,7 +204,7 @@
       
     <div class="nexmoe-post-copyright">
         <strong>本文作者：</strong>AIZc<br>
-        <strong>本文链接：</strong><a href="https://aizc.github.io/2021/07/26/button-type%E5%B1%9E%E6%80%A7/" title="https:&#x2F;&#x2F;aizc.github.io&#x2F;2021&#x2F;07&#x2F;26&#x2F;button-type%E5%B1%9E%E6%80%A7&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;aizc.github.io&#x2F;2021&#x2F;07&#x2F;26&#x2F;button-type%E5%B1%9E%E6%80%A7&#x2F;</a><br>
+        <strong>本文链接：</strong><a href="https://aizc.github.io/2021/11/27/es6-%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/" title="https:&#x2F;&#x2F;aizc.github.io&#x2F;2021&#x2F;11&#x2F;27&#x2F;es6-%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;aizc.github.io&#x2F;2021&#x2F;11&#x2F;27&#x2F;es6-%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95&#x2F;</a><br>
         
             <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
         
@@ -220,7 +218,7 @@
         <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a>
     
     
-        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/antd/" rel="tag">antd</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/html/" rel="tag">html</a>
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/es6/" rel="tag">es6</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/javascript/" rel="tag">javascript</a>
     
 </div>
 
@@ -256,7 +254,7 @@
                               <button class="mdui-fab catalog" style="overflow:unset;">
                                   <i class="nexmoefont icon-i-catalog"></i>
                                   <div class="nexmoe-toc">
-                                      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#button-type%E5%B1%9E%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">button type属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="toc-number">1.1.</span> <span class="toc-text">总结：</span></a></li></ol></li></ol>
+                                      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%BB%98%E8%AE%A4%E5%80%BC%E7%94%9F%E6%95%88%E7%9A%84%E6%9D%A1%E4%BB%B6%E6%98%AF%EF%BC%8C%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E4%B8%A5%E6%A0%BC%E7%AD%89%E4%BA%8Eundefined%E3%80%82"><span class="toc-number">1.</span> <span class="toc-text">默认值生效的条件是，对象的属性值严格等于undefined。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E9%80%94"><span class="toc-number">2.</span> <span class="toc-text">用途</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E4%BD%BF%E7%94%A8%E7%AC%AC%E4%B8%89%E4%B8%AA%E5%8F%98%E9%87%8F%E4%BA%A4%E6%8D%A2%E4%B8%A4%E4%B8%AA%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC"><span class="toc-number">2.1.</span> <span class="toc-text">不使用第三个变量交换两个变量的值</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Object-getOwnPropertyDescriptors"><span class="toc-number">3.</span> <span class="toc-text">Object.getOwnPropertyDescriptors()</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BA%86%E8%A7%A3%E5%86%B3Object-assign-%E6%97%A0%E6%B3%95%E6%8B%B7%E8%B4%9Dset%E6%88%96%E8%80%85get%EF%BC%8CObject-getOwnPropertyDescriptors-%E9%85%8D%E5%90%88-Object-defineProperties-%E5%B0%B1%E5%8F%AF%E4%BB%A5%E5%AE%9E%E7%8E%B0set%E5%92%8Cget%E7%9A%84%E6%8B%B7%E8%B4%9D%E3%80%82"><span class="toc-number">3.1.</span> <span class="toc-text">为了解决Object.assign() 无法拷贝set或者get，Object.getOwnPropertyDescriptors() 配合 Object.defineProperties() 就可以实现set和get的拷贝。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Object-assign-%E6%97%A0%E6%B3%95%E6%8B%B7%E8%B4%9D%E5%8E%9F%E5%9E%8B%EF%BC%8CObject-create-%E5%92%8C-getOwnPropertyDescriptors-%E9%85%8D%E5%90%88%E5%8F%AF%E4%BB%A5%E5%AE%9E%E7%8E%B0%E5%8E%9F%E5%9E%8B%E6%8B%B7%E8%B4%9D%E3%80%82"><span class="toc-number">3.2.</span> <span class="toc-text">Object.assign()无法拷贝原型，Object.create() 和 getOwnPropertyDescriptors() 配合可以实现原型拷贝。</span></a></li></ol></li></ol>
                                   </div>
                               </button>
                           
@@ -275,7 +273,7 @@
 
  
 
-<script async src="/js/app.js?v=1637138781093"></script>
+<script async src="/js/app.js?v=1637138781069"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>
