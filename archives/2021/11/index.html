@@ -21,9 +21,9 @@
 <meta property="article:author" content="AIZc">
 <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1637138781108">
+    <link rel="stylesheet" href="/css/style.css?v=1637138936114">
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1637138781108">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1637138936114">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -170,23 +170,23 @@
         <a href="/2021/11/27/es6-%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/">
             
                 <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;"> 
-                    <img data-src="https://img2.huashi6.com/images/resource/2015/11/07/53h430426p0.jpg" data-sizes="auto" alt="es6 阅读记录 变量解构赋值。" class="lazyload">
-                    <h1>es6 阅读记录 变量解构赋值。</h1>
+                    <img data-src="https://img2.huashi6.com/images/resource/2015/11/07/53h430426p0.jpg" data-sizes="auto" alt="es6 阅读记录。" class="lazyload">
+                    <h1>es6 阅读记录。</h1>
                 </div>
             
         </a>
 
         <div class="nexmoe-post-meta nexmoe-rainbow">
             <a><i class="nexmoefont icon-calendar-fill"></i>2021年11月27日</a>
-            <a><i class="nexmoefont icon-areachart"></i>236 字</a>
+            <a><i class="nexmoefont icon-areachart"></i>242 字</a>
             <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
         </div>
 
         <article>
             
-                <h2 id="默认值生效的条件是，对象的属性值严格等于undefined。"><a href="#默认值生效的条件是，对象的属性值严格等于undefined。" class="headerlink" title="默认值生效的条件是，对象的属性值严格等于undefined。"></a>默认值生效的条件是，对象的属性值严格等于undefined。</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> &#123;x = <span class="hljs-number">3</span>&#125; = &#123;<span class="hljs-attr">x</span>: <span class="hljs-literal">undefined</span>&#125;;<br>x <span class="hljs-comment">// 3</span><br><br><span class="hljs-keyword">let</span> &#123;x = <span class="hljs-number">3</span>&#125; = &#123;<span class="hljs-attr">x</span>: <span class="hljs-literal">null</span>&#125;;<br>x <span class="hljs-comment">// null</span><br></code></pre></td></tr></table></figure>
+                <h2 id="变量解构赋值"><a href="#变量解构赋值" class="headerlink" title="变量解构赋值"></a>变量解构赋值</h2><h3 id="默认值生效的条件是，对象的属性值严格等于undefined。"><a href="#默认值生效的条件是，对象的属性值严格等于undefined。" class="headerlink" title="默认值生效的条件是，对象的属性值严格等于undefined。"></a>默认值生效的条件是，对象的属性值严格等于undefined。</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> &#123;x = <span class="hljs-number">3</span>&#125; = &#123;<span class="hljs-attr">x</span>: <span class="hljs-literal">undefined</span>&#125;;<br>x <span class="hljs-comment">// 3</span><br><br><span class="hljs-keyword">let</span> &#123;x = <span class="hljs-number">3</span>&#125; = &#123;<span class="hljs-attr">x</span>: <span class="hljs-literal">null</span>&#125;;<br>x <span class="hljs-comment">// null</span><br></code></pre></td></tr></table></figure>
 <p>上面代码中，属性<code>x</code>等于<code>null</code>，因为<code>null</code>与<code>undefined</code>不严格相等，所以是个有效的赋值，导致默认值<code>3</code>不会生效。</p>
-<h2 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h2><h3 id="不使用第三个变量交换两个变量的值"><a href="#不使用第三个变量交换两个变量的值" class="headerlink" title="不使用第三个变量交换两个变量的值"></a>不使用第三个变量交换两个变量的值</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> x = <span class="hljs-number">1</span>;<br><span class="hljs-keyword">let</span> y = <span class="hljs-number">2</span>;<br><br>[x, y] = [y, x];<br></code></pre></td></tr></table></figure>
+<h3 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h3><h4 id="不使用第三个变量交换两个变量的值"><a href="#不使用第三个变量交换两个变量的值" class="headerlink" title="不使用第三个变量交换两个变量的值"></a>不使用第三个变量交换两个变量的值</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> x = <span class="hljs-number">1</span>;<br><span class="hljs-keyword">let</span> y = <span class="hljs-number">2</span>;<br><br>[x, y] = [y, x];<br></code></pre></td></tr></table></figure>
 
 <h2 id="Object-getOwnPropertyDescriptors"><a href="#Object-getOwnPropertyDescriptors" class="headerlink" title="Object.getOwnPropertyDescriptors()"></a>Object.getOwnPropertyDescriptors()</h2><h3 id="为了解决Object-assign-无法拷贝set或者get，Object-getOwnPropertyDescriptors-配合-Object-defineProperties-就可以实现set和get的拷贝。"><a href="#为了解决Object-assign-无法拷贝set或者get，Object-getOwnPropertyDescriptors-配合-Object-defineProperties-就可以实现set和get的拷贝。" class="headerlink" title="为了解决Object.assign() 无法拷贝set或者get，Object.getOwnPropertyDescriptors() 配合 Object.defineProperties() 就可以实现set和get的拷贝。"></a>为了解决Object.assign() 无法拷贝set或者get，Object.getOwnPropertyDescriptors() 配合 Object.defineProperties() 就可以实现set和get的拷贝。</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> target = &#123;&#125;;<br><span class="hljs-keyword">const</span> source = &#123;<br>  <span class="hljs-keyword">set</span> <span class="hljs-title">foo</span>(<span class="hljs-params">value</span>) &#123;<br>    <span class="hljs-built_in">console</span>.log(value);<br>  &#125;<br>&#125;;<br><span class="hljs-built_in">Object</span>.defineProperties(<br>  target,<br>  <span class="hljs-built_in">Object</span>.getOwnPropertyDescriptors(source)<br>);<br><span class="hljs-comment">// &#123; get: undefined,</span><br><span class="hljs-comment">//   set: [Function: set foo],</span><br><span class="hljs-comment">//   enumerable: true,</span><br><span class="hljs-comment">//   configurable: true &#125;</span><br></code></pre></td></tr></table></figure>
 
@@ -223,7 +223,7 @@
 
  
 
-<script async src="/js/app.js?v=1637138781109"></script>
+<script async src="/js/app.js?v=1637138936114"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>
