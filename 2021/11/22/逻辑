@@ -4,7 +4,7 @@
 
 <head>
     
-    <title>标签：es6 - 张大超</title>
+    <title>JavaScript 中 ?? 与 || 的区别 - 张大超</title>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -13,17 +13,23 @@
     
 
     <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/39026040?v=4" type="image/x-icon" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="张大超">
-<meta property="og:url" content="https://aizc.github.io/tags/es6/index.html">
+    <meta name="description" content="JavaScript 中 ?? 与 || 的区别 相同点用法相同，都是前后是值，中间用符号连接。根据前面的值来判断最终返回前面的值还是后面的值。值1 ?? 值2值1 || 值2  ##不同点 判断方式不同：使用 ?? 时，只有当值1为null或undefined时才返回值2； 使用 || 时，值1会转换为布尔值判断，为true返回值1，false 返回值2 &#x2F;&#x2F; ??undefined ?? 2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript 中 ?? 与 || 的区别">
+<meta property="og:url" content="https://aizc.github.io/2021/11/22/%E9%80%BB%E8%BE%91">
 <meta property="og:site_name" content="张大超">
+<meta property="og:description" content="JavaScript 中 ?? 与 || 的区别 相同点用法相同，都是前后是值，中间用符号连接。根据前面的值来判断最终返回前面的值还是后面的值。值1 ?? 值2值1 || 值2  ##不同点 判断方式不同：使用 ?? 时，只有当值1为null或undefined时才返回值2； 使用 || 时，值1会转换为布尔值判断，为true返回值1，false 返回值2 &#x2F;&#x2F; ??undefined ?? 2">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-11-21T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-11-22T03:37:45.366Z">
 <meta property="article:author" content="AIZc">
+<meta property="article:tag" content="javascript">
+<meta property="article:tag" content="es6">
 <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1637552268457">
+    <link rel="stylesheet" href="/css/style.css?v=1637552268415">
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1637552268457">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1637552268415">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -164,27 +170,25 @@
     </div>
     <div id="nexmoe-content">
         <div class="nexmoe-primary">
-            <section class="nexmoe-posts">
-    
-    <div class="nexmoe-post">
-        <a href="/2021/11/22/%E9%80%BB%E8%BE%91??%E5%92%8C%7C%7C%E7%9A%84%E5%8C%BA%E5%88%AB/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;"> 
-                    <img data-src="https://img2.huashi6.com/images/resource/2015/11/07/53h430426p0.jpg" data-sizes="auto" alt="JavaScript 中 ?? 与 || 的区别" class="lazyload">
-                    <h1>JavaScript 中 ?? 与 || 的区别</h1>
-                </div>
-            
-        </a>
+            <div class="nexmoe-post">
 
-        <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2021年11月22日</a>
-            <a><i class="nexmoefont icon-areachart"></i>157 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-        </div>
+  <article>
+      
+          <div class="nexmoe-post-cover" style="padding-bottom: NaN%;"> 
+              <img data-src="https://img2.huashi6.com/images/resource/2015/11/07/53h430426p0.jpg" data-sizes="auto" alt="JavaScript 中 ?? 与 || 的区别" class="lazyload">
+              <h1>JavaScript 中 ?? 与 || 的区别</h1>
+          </div>
+      
+      
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2021年11月22日</a>
+    <a><i class="nexmoefont icon-areachart"></i>157 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+</div>
 
-        <article>
-            
-                <p>JavaScript 中 ?? 与 || 的区别</p>
+      
+
+      <p>JavaScript 中 ?? 与 || 的区别</p>
 <h2 id="相同点"><a href="#相同点" class="headerlink" title="相同点"></a>相同点</h2><h3 id="用法相同，都是前后是值，中间用符号连接。根据前面的值来判断最终返回前面的值还是后面的值。"><a href="#用法相同，都是前后是值，中间用符号连接。根据前面的值来判断最终返回前面的值还是后面的值。" class="headerlink" title="用法相同，都是前后是值，中间用符号连接。根据前面的值来判断最终返回前面的值还是后面的值。"></a>用法相同，都是前后是值，中间用符号连接。根据前面的值来判断最终返回前面的值还是后面的值。</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">值<span class="hljs-number">1</span> ?? 值<span class="hljs-number">2</span><br>值<span class="hljs-number">1</span> || 值<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure>
 
 <p>##不同点</p>
@@ -194,67 +198,51 @@
 
 
 <h3 id="总的来说，-更加适合在不知道变量是否有值时使用。"><a href="#总的来说，-更加适合在不知道变量是否有值时使用。" class="headerlink" title="总的来说，??更加适合在不知道变量是否有值时使用。"></a>总的来说，??更加适合在不知道变量是否有值时使用。</h3>
-            
-        </article>
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>本文作者：</strong>AIZc<br>
+        <strong>本文链接：</strong><a href="https://aizc.github.io/2021/11/22/%E9%80%BB%E8%BE%91??%E5%92%8C%7C%7C%E7%9A%84%E5%8C%BA%E5%88%AB/" title="https:&#x2F;&#x2F;aizc.github.io&#x2F;2021&#x2F;11&#x2F;22&#x2F;%E9%80%BB%E8%BE%91??%E5%92%8C%7C%7C%E7%9A%84%E5%8C%BA%E5%88%AB&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;aizc.github.io&#x2F;2021&#x2F;11&#x2F;22&#x2F;%E9%80%BB%E8%BE%91??%E5%92%8C%7C%7C%E7%9A%84%E5%8C%BA%E5%88%AB&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
     </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
     
-    <div class="nexmoe-post">
-        <a href="/2021/11/17/es6-%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95-1/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;"> 
-                    <img data-src="https://img2.huashi6.com/images/resource/2015/11/07/53h430426p0.jpg" data-sizes="auto" alt="es6 阅读记录-1。" class="lazyload">
-                    <h1>es6 阅读记录-1。</h1>
-                </div>
-            
-        </a>
-
-        <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2021年11月17日</a>
-            <a><i class="nexmoefont icon-areachart"></i>242 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-        </div>
-
-        <article>
-            
-                <h2 id="变量解构赋值"><a href="#变量解构赋值" class="headerlink" title="变量解构赋值"></a>变量解构赋值</h2><h3 id="默认值生效的条件是，对象的属性值严格等于undefined。"><a href="#默认值生效的条件是，对象的属性值严格等于undefined。" class="headerlink" title="默认值生效的条件是，对象的属性值严格等于undefined。"></a>默认值生效的条件是，对象的属性值严格等于undefined。</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> &#123;x = <span class="hljs-number">3</span>&#125; = &#123;<span class="hljs-attr">x</span>: <span class="hljs-literal">undefined</span>&#125;;<br>x <span class="hljs-comment">// 3</span><br><br><span class="hljs-keyword">let</span> &#123;x = <span class="hljs-number">3</span>&#125; = &#123;<span class="hljs-attr">x</span>: <span class="hljs-literal">null</span>&#125;;<br>x <span class="hljs-comment">// null</span><br></code></pre></td></tr></table></figure>
-<p>上面代码中，属性<code>x</code>等于<code>null</code>，因为<code>null</code>与<code>undefined</code>不严格相等，所以是个有效的赋值，导致默认值<code>3</code>不会生效。</p>
-<h3 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h3><h4 id="不使用第三个变量交换两个变量的值"><a href="#不使用第三个变量交换两个变量的值" class="headerlink" title="不使用第三个变量交换两个变量的值"></a>不使用第三个变量交换两个变量的值</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> x = <span class="hljs-number">1</span>;<br><span class="hljs-keyword">let</span> y = <span class="hljs-number">2</span>;<br><br>[x, y] = [y, x];<br></code></pre></td></tr></table></figure>
-
-<h2 id="Object-getOwnPropertyDescriptors"><a href="#Object-getOwnPropertyDescriptors" class="headerlink" title="Object.getOwnPropertyDescriptors()"></a>Object.getOwnPropertyDescriptors()</h2><h3 id="为了解决Object-assign-无法拷贝set或者get，Object-getOwnPropertyDescriptors-配合-Object-defineProperties-就可以实现set和get的拷贝。"><a href="#为了解决Object-assign-无法拷贝set或者get，Object-getOwnPropertyDescriptors-配合-Object-defineProperties-就可以实现set和get的拷贝。" class="headerlink" title="为了解决Object.assign() 无法拷贝set或者get，Object.getOwnPropertyDescriptors() 配合 Object.defineProperties() 就可以实现set和get的拷贝。"></a>为了解决Object.assign() 无法拷贝set或者get，Object.getOwnPropertyDescriptors() 配合 Object.defineProperties() 就可以实现set和get的拷贝。</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> target = &#123;&#125;;<br><span class="hljs-keyword">const</span> source = &#123;<br>  <span class="hljs-keyword">set</span> <span class="hljs-title">foo</span>(<span class="hljs-params">value</span>) &#123;<br>    <span class="hljs-built_in">console</span>.log(value);<br>  &#125;<br>&#125;;<br><span class="hljs-built_in">Object</span>.defineProperties(<br>  target,<br>  <span class="hljs-built_in">Object</span>.getOwnPropertyDescriptors(source)<br>);<br><span class="hljs-comment">// &#123; get: undefined,</span><br><span class="hljs-comment">//   set: [Function: set foo],</span><br><span class="hljs-comment">//   enumerable: true,</span><br><span class="hljs-comment">//   configurable: true &#125;</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="Object-assign-无法拷贝原型，Object-create-和-getOwnPropertyDescriptors-配合可以实现原型拷贝。"><a href="#Object-assign-无法拷贝原型，Object-create-和-getOwnPropertyDescriptors-配合可以实现原型拷贝。" class="headerlink" title="Object.assign()无法拷贝原型，Object.create() 和 getOwnPropertyDescriptors() 配合可以实现原型拷贝。"></a>Object.assign()无法拷贝原型，Object.create() 和 getOwnPropertyDescriptors() 配合可以实现原型拷贝。</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> obj = &#123;<br>    <span class="hljs-attr">a</span>:<span class="hljs-number">1</span>,<br>    <span class="hljs-attr">b</span>:<span class="hljs-number">2</span><br>&#125;<br><span class="hljs-keyword">const</span> obj1 = &#123;<br>  <span class="hljs-attr">x</span>:<span class="hljs-number">0</span><br>&#125;<br>obj.__proto__ = obj1 <span class="hljs-comment">// 或者Object.setPrototypeOf(obj,obj1)</span><br><span class="hljs-keyword">const</span> clone = <span class="hljs-built_in">Object</span>.create(<span class="hljs-built_in">Object</span>.getPrototypeOf(obj), <span class="hljs-built_in">Object</span>.getOwnPropertyDescriptors(obj));<br><span class="hljs-comment">// a: 1</span><br><span class="hljs-comment">// b: 2</span><br><span class="hljs-comment">//         [[Prototype]]: Object</span><br><span class="hljs-comment">//          x: 0</span><br></code></pre></td></tr></table></figure>
-
-<p>end～</p>
-
-            
-        </article>
-    </div>
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a>
     
-    <div class="nexmoe-post">
-        <a href="/2021/09/27/JS%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;"> 
-                    <img data-src="https://img2.huashi6.com/images/resource/2015/11/07/53h430426p0.jpg" data-sizes="auto" alt="JS数据结构与算法。" class="lazyload">
-                    <h1>JS数据结构与算法。</h1>
-                </div>
-            
-        </a>
-
-        <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2021年09月27日</a>
-            <a><i class="nexmoefont icon-areachart"></i>11 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-        </div>
-
-        <article>
-            
-                <h1 id="主要总结自己认为的难点。"><a href="#主要总结自己认为的难点。" class="headerlink" title="主要总结自己认为的难点。"></a>主要总结自己认为的难点。</h1>
-            
-        </article>
-    </div>
     
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/es6/" rel="tag">es6</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/javascript/" rel="tag">javascript</a>
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'b5bd7321926651f07f1c',
+        clientSecret: '6fcb03944da80f0a047447b1604c95654e5fb67b',
+        id: window.location.pathname,
+        repo: 'AIZc.github.io',
+        owner: 'AIZc',
+        admin: 'AIZc'
+    })
+    gitalk.render('gitalk')
+</script>
 </section>
-
+      </div>
+  
+</div>
             <div class="nexmoe-post-right">
               <div class="nexmoe-fixed">
                   <div class="nexmoe-tool"> 
@@ -262,6 +250,13 @@
                       
                         
                           
+                          
+                              <button class="mdui-fab catalog" style="overflow:unset;">
+                                  <i class="nexmoefont icon-i-catalog"></i>
+                                  <div class="nexmoe-toc">
+                                      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B8%E5%90%8C%E7%82%B9"><span class="toc-number">1.</span> <span class="toc-text">相同点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%B3%95%E7%9B%B8%E5%90%8C%EF%BC%8C%E9%83%BD%E6%98%AF%E5%89%8D%E5%90%8E%E6%98%AF%E5%80%BC%EF%BC%8C%E4%B8%AD%E9%97%B4%E7%94%A8%E7%AC%A6%E5%8F%B7%E8%BF%9E%E6%8E%A5%E3%80%82%E6%A0%B9%E6%8D%AE%E5%89%8D%E9%9D%A2%E7%9A%84%E5%80%BC%E6%9D%A5%E5%88%A4%E6%96%AD%E6%9C%80%E7%BB%88%E8%BF%94%E5%9B%9E%E5%89%8D%E9%9D%A2%E7%9A%84%E5%80%BC%E8%BF%98%E6%98%AF%E5%90%8E%E9%9D%A2%E7%9A%84%E5%80%BC%E3%80%82"><span class="toc-number">1.1.</span> <span class="toc-text">用法相同，都是前后是值，中间用符号连接。根据前面的值来判断最终返回前面的值还是后面的值。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E6%96%B9%E5%BC%8F%E4%B8%8D%E5%90%8C%EF%BC%9A"><span class="toc-number">1.2.</span> <span class="toc-text">判断方式不同：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%9A%84%E6%9D%A5%E8%AF%B4%EF%BC%8C-%E6%9B%B4%E5%8A%A0%E9%80%82%E5%90%88%E5%9C%A8%E4%B8%8D%E7%9F%A5%E9%81%93%E5%8F%98%E9%87%8F%E6%98%AF%E5%90%A6%E6%9C%89%E5%80%BC%E6%97%B6%E4%BD%BF%E7%94%A8%E3%80%82"><span class="toc-number">1.3.</span> <span class="toc-text">总的来说，??更加适合在不知道变量是否有值时使用。</span></a></li></ol></li></ol>
+                                  </div>
+                              </button>
                           
                           
                       
@@ -278,7 +273,7 @@
 
  
 
-<script async src="/js/app.js?v=1637552268458"></script>
+<script async src="/js/app.js?v=1637552268419"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>

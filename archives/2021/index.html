@@ -21,9 +21,9 @@
 <meta property="article:author" content="AIZc">
 <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1637552253749">
+    <link rel="stylesheet" href="/css/style.css?v=1637552268444">
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1637552253749">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1637552268444">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -47,7 +47,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>8</div>
+        <div><span>文章</span>9</div>
         <div><span>标签</span>8</div>
         <div><span>分类</span>2</div>
     </div>
@@ -126,7 +126,7 @@
 
         <li class="category-list-item">
           <a class="category-list-link" href="/categories/开发/">开发</a>
-          <span class="category-list-count">6</span>
+          <span class="category-list-count">7</span>
         </li>
 
         
@@ -147,7 +147,7 @@
     
   <div class="nexmoe-widget-wrap">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/antd/" style="font-size: 15px;">antd</a> <a href="/tags/es6/" style="font-size: 15px;">es6</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/lodash/" style="font-size: 10px;">lodash</a> <a href="/tags/package-json/" style="font-size: 10px;">package.json</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/wife/" style="font-size: 10px;">wife</a>
+      <a href="/tags/antd/" style="font-size: 13.33px;">antd</a> <a href="/tags/es6/" style="font-size: 16.67px;">es6</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/lodash/" style="font-size: 10px;">lodash</a> <a href="/tags/package-json/" style="font-size: 10px;">package.json</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/wife/" style="font-size: 10px;">wife</a>
     </div>
     
   </div>
@@ -165,6 +165,38 @@
     <div id="nexmoe-content">
         <div class="nexmoe-primary">
             <section class="nexmoe-posts">
+    
+    <div class="nexmoe-post">
+        <a href="/2021/11/22/%E9%80%BB%E8%BE%91??%E5%92%8C%7C%7C%E7%9A%84%E5%8C%BA%E5%88%AB/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;"> 
+                    <img data-src="https://img2.huashi6.com/images/resource/2015/11/07/53h430426p0.jpg" data-sizes="auto" alt="JavaScript 中 ?? 与 || 的区别" class="lazyload">
+                    <h1>JavaScript 中 ?? 与 || 的区别</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2021年11月22日</a>
+            <a><i class="nexmoefont icon-areachart"></i>157 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+        </div>
+
+        <article>
+            
+                <p>JavaScript 中 ?? 与 || 的区别</p>
+<h2 id="相同点"><a href="#相同点" class="headerlink" title="相同点"></a>相同点</h2><h3 id="用法相同，都是前后是值，中间用符号连接。根据前面的值来判断最终返回前面的值还是后面的值。"><a href="#用法相同，都是前后是值，中间用符号连接。根据前面的值来判断最终返回前面的值还是后面的值。" class="headerlink" title="用法相同，都是前后是值，中间用符号连接。根据前面的值来判断最终返回前面的值还是后面的值。"></a>用法相同，都是前后是值，中间用符号连接。根据前面的值来判断最终返回前面的值还是后面的值。</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">值<span class="hljs-number">1</span> ?? 值<span class="hljs-number">2</span><br>值<span class="hljs-number">1</span> || 值<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure>
+
+<p>##不同点</p>
+<h3 id="判断方式不同："><a href="#判断方式不同：" class="headerlink" title="判断方式不同："></a>判断方式不同：</h3><p><code>使用 ?? 时，只有当值1为null或undefined时才返回值2；</code></p>
+<p><code>使用 || 时，值1会转换为布尔值判断，为true返回值1，false 返回值2</code></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// ??</span><br><span class="hljs-literal">undefined</span> ?? <span class="hljs-number">2</span>	<span class="hljs-comment">// 2</span><br><span class="hljs-literal">null</span> ?? <span class="hljs-number">2</span>		<span class="hljs-comment">// 2</span><br><span class="hljs-number">0</span> ?? <span class="hljs-number">2</span>			<span class="hljs-comment">// 0</span><br><span class="hljs-string">&quot;&quot;</span> ?? <span class="hljs-number">2</span>			<span class="hljs-comment">// &quot;&quot;</span><br><span class="hljs-literal">true</span> ?? <span class="hljs-number">2</span>		<span class="hljs-comment">// true</span><br><span class="hljs-literal">false</span> ?? <span class="hljs-number">2</span>		<span class="hljs-comment">// false</span><br><br><span class="hljs-comment">// ||</span><br><span class="hljs-literal">undefined</span> || <span class="hljs-number">2</span>	<span class="hljs-comment">// 2</span><br><span class="hljs-literal">null</span> || <span class="hljs-number">2</span>		<span class="hljs-comment">// 2</span><br><span class="hljs-number">0</span> || <span class="hljs-number">2</span>			<span class="hljs-comment">// 2</span><br><span class="hljs-string">&quot;&quot;</span> || <span class="hljs-number">2</span>			<span class="hljs-comment">// 2</span><br><span class="hljs-literal">true</span> || <span class="hljs-number">2</span>		<span class="hljs-comment">// true</span><br><span class="hljs-literal">false</span> || <span class="hljs-number">2</span>		<span class="hljs-comment">// 2</span><br></code></pre></td></tr></table></figure>
+
+
+<h3 id="总的来说，-更加适合在不知道变量是否有值时使用。"><a href="#总的来说，-更加适合在不知道变量是否有值时使用。" class="headerlink" title="总的来说，??更加适合在不知道变量是否有值时使用。"></a>总的来说，??更加适合在不知道变量是否有值时使用。</h3>
+            
+        </article>
+    </div>
     
     <div class="nexmoe-post">
         <a href="/2021/11/17/es6-%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95-1/">
@@ -438,7 +470,7 @@
 
  
 
-<script async src="/js/app.js?v=1637552253750"></script>
+<script async src="/js/app.js?v=1637552268445"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>
