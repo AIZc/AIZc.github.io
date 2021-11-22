@@ -16,7 +16,7 @@
     <meta name="description" content="JavaScript 中 ?? 与 || 的区别相同点用法相同，都是前后是值，中间用符号连接。根据前面的值来判断最终返回前面的值还是后面的值。值1 ?? 值2值1 || 值2  ###不同点 判断方式不同：使用 ?? 时，只有当值1为null或undefined时才返回值2； 使用 || 时，值1会转换为布尔值判断，为true返回值1，false 返回值2 &#x2F;&#x2F; ??undefined ?? 2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript 中 ?? 与 || 的区别">
-<meta property="og:url" content="https://aizc.github.io/2021/11/22/js%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6">
+<meta property="og:url" content="https://aizc.github.io/2021/11/22/js%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%9F%EF%BC%9F%E5%92%8C%EF%BD%9C%EF%BD%9C%E7%9A%84%E5%8C%BA%E5%88%AB/index.html">
 <meta property="og:site_name" content="张大超">
 <meta property="og:description" content="JavaScript 中 ?? 与 || 的区别相同点用法相同，都是前后是值，中间用符号连接。根据前面的值来判断最终返回前面的值还是后面的值。值1 ?? 值2值1 || 值2  ###不同点 判断方式不同：使用 ?? 时，只有当值1为null或undefined时才返回值2； 使用 || 时，值1会转换为布尔值判断，为true返回值1，false 返回值2 &#x2F;&#x2F; ??undefined ?? 2">
 <meta property="og:locale" content="zh_CN">
@@ -27,9 +27,9 @@
 <meta property="article:tag" content="es6">
 <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1637552606956">
+    <link rel="stylesheet" href="/css/style.css?v=1637552730072">
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1637552606956">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1637552730072">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -203,7 +203,7 @@
       
     <div class="nexmoe-post-copyright">
         <strong>本文作者：</strong>AIZc<br>
-        <strong>本文链接：</strong><a href="https://aizc.github.io/2021/11/22/js%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6??%E5%92%8C%7C%7C%E7%9A%84%E5%8C%BA%E5%88%AB/" title="https:&#x2F;&#x2F;aizc.github.io&#x2F;2021&#x2F;11&#x2F;22&#x2F;js%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6??%E5%92%8C%7C%7C%E7%9A%84%E5%8C%BA%E5%88%AB&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;aizc.github.io&#x2F;2021&#x2F;11&#x2F;22&#x2F;js%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6??%E5%92%8C%7C%7C%E7%9A%84%E5%8C%BA%E5%88%AB&#x2F;</a><br>
+        <strong>本文链接：</strong><a href="https://aizc.github.io/2021/11/22/js%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%9F%EF%BC%9F%E5%92%8C%EF%BD%9C%EF%BD%9C%E7%9A%84%E5%8C%BA%E5%88%AB/" title="https:&#x2F;&#x2F;aizc.github.io&#x2F;2021&#x2F;11&#x2F;22&#x2F;js%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%9F%EF%BC%9F%E5%92%8C%EF%BD%9C%EF%BD%9C%E7%9A%84%E5%8C%BA%E5%88%AB&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;aizc.github.io&#x2F;2021&#x2F;11&#x2F;22&#x2F;js%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%9F%EF%BC%9F%E5%92%8C%EF%BD%9C%EF%BD%9C%E7%9A%84%E5%8C%BA%E5%88%AB&#x2F;</a><br>
         
             <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
         
@@ -272,7 +272,7 @@
 
  
 
-<script async src="/js/app.js?v=1637552606959"></script>
+<script async src="/js/app.js?v=1637552730074"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>
